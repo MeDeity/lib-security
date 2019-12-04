@@ -21,6 +21,10 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+            </dependency>
+            <dependency>
                 <groupId>io.spring.platform</groupId>
                 <artifactId>platform-bom</artifactId>
                 <version>Brussels-SR4</version>
@@ -48,5 +52,6 @@
     <modules>
         <module>lib-security-core</module>
         <module>lib-security-validate</module>
+        <module>lib-security-demo</module>
     </modules>
 </project>
