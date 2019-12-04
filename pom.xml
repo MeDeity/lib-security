@@ -9,7 +9,14 @@
     <version>1.0-SNAPSHOT</version>
     <!--这里一定选的是pom  不要是jar war-->
     <packaging>pom</packaging>
+    <name>lib-security</name>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lib.security.version>1.5.0</lib.security.version>
+        <lib.security.core.version>1.0.0</lib.security.core.version>
+        <lib.security.validate.version>1.0.0</lib.security.validate.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
