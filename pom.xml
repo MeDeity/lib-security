@@ -38,4 +38,8 @@
         </plugins>
     </build>
 
+    <modules>
+        <module>lib-security-core</module>
+        <module>lib-security-validate</module>
+    </modules>
 </project>
