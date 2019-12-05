@@ -18,8 +18,8 @@
     <dependencies>
         <dependency>
             <groupId>com.mengya</groupId>
-            <artifactId>lib-security-core</artifactId>
-            <version>${lib.security.core.version}</version>
+            <artifactId>lib-security-validate</artifactId>
+            <version>${lib.security.validate.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

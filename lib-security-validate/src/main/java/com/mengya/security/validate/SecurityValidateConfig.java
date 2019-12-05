@@ -15,7 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * @author chentongwei@bshf360.com 2018-05-25 11:31
  */
 @Configuration
-@PropertySource("classpath:security.properties")
+@PropertySource("classpath:security.yml")
 @EnableConfigurationProperties(SecurityProperties.class)
 public class SecurityValidateConfig {
 

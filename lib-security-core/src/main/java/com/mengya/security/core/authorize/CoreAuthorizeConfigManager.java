@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
+ * 主要的过滤处理器
  * @author chentongwei@bshf360.com 2018-03-26 11:14
  */
 @Component
