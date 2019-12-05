@@ -1,7 +1,7 @@
-package com.chentongwei.security.app.authorize;
+package com.mengya.security.app.authorize;
 
-import com.chentongwei.security.app.jwt.filter.JwtAuthenticationTokenFilter;
-import com.chentongwei.security.core.authorize.AuthorizeConfigProvider;
+import com.mengya.security.app.jwt.filter.JwtAuthenticationTokenFilter;
+import com.mengya.security.core.authorize.AuthorizeConfigProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

@@ -1,6 +1,6 @@
-package com.chentongwei.security.core.authorize;
+package com.mengya.security.core.authorize;
 
-import com.chentongwei.security.core.properties.SecurityProperties;
+import com.mengya.security.core.properties.SecurityProperties;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;

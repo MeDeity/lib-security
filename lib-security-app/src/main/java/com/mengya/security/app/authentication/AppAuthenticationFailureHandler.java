@@ -1,7 +1,7 @@
-package com.chentongwei.security.app.authentication;
+package com.mengya.security.app.authentication;
 
 import com.alibaba.fastjson.JSON;
-import com.chentongwei.security.core.response.ResponseEntity;
+import com.mengya.security.core.response.ResponseEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

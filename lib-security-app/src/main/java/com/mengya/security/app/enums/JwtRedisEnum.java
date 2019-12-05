@@ -1,4 +1,4 @@
-package com.chentongwei.security.app.enums;
+package com.mengya.security.app.enums;
 
 /**
  * Redis存储jwt的key前缀

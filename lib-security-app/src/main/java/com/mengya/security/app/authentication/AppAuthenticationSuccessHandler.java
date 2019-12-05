@@ -1,10 +1,10 @@
-package com.chentongwei.security.app.authentication;
+package com.mengya.security.app.authentication;
 
 import com.alibaba.fastjson.JSON;
-import com.chentongwei.security.app.enums.JwtRedisEnum;
-import com.chentongwei.security.app.jwt.util.JwtTokenUtil;
-import com.chentongwei.security.app.properties.SecurityProperties;
-import com.chentongwei.security.core.response.ResponseEntity;
+import com.mengya.security.app.enums.JwtRedisEnum;
+import com.mengya.security.app.jwt.util.JwtTokenUtil;
+import com.mengya.security.app.properties.SecurityProperties;
+import com.mengya.security.core.response.ResponseEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

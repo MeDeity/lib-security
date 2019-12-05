@@ -1,4 +1,4 @@
-package com.chentongwei.security.app.enums;
+package com.mengya.security.app.enums;
 
 /**
  * URL 枚举

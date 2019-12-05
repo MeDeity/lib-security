@@ -1,6 +1,6 @@
-package com.chentongwei.security.app.properties;
+package com.mengya.security.app.properties;
 
-import com.chentongwei.security.app.properties.jwt.JwtProperties;
+import com.mengya.security.app.properties.jwt.JwtProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**

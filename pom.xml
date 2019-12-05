@@ -16,6 +16,7 @@
         <lib.security.version>1.5.0</lib.security.version>
         <lib.security.core.version>1.0.0</lib.security.core.version>
         <lib.security.validate.version>1.0.0</lib.security.validate.version>
+        <lib.security.app.version>1.0.0</lib.security.app.version>
     </properties>
 
     <dependencyManagement>
@@ -53,5 +54,6 @@
         <module>lib-security-core</module>
         <module>lib-security-validate</module>
         <module>lib-security-demo</module>
+        <module>lib-security-app</module>
     </modules>
 </project>

@@ -1,4 +1,4 @@
-package com.chentongwei.security.app.jwt.util;
+package com.mengya.security.app.jwt.util;
 
 import com.chentongwei.security.app.properties.SecurityProperties;
 import io.jsonwebtoken.Claims;

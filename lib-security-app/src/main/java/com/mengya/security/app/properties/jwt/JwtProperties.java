@@ -1,4 +1,4 @@
-package com.chentongwei.security.app.properties.jwt;
+package com.mengya.security.app.properties.jwt;
 
 /**
  * Jwt的基本配置

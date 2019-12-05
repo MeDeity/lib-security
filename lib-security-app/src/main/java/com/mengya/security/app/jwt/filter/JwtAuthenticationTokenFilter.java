@@ -1,13 +1,13 @@
-package com.chentongwei.security.app.jwt.filter;
+package com.mengya.security.app.jwt.filter;
 
 import com.alibaba.fastjson.JSON;
-import com.chentongwei.security.app.enums.JwtRedisEnum;
-import com.chentongwei.security.app.enums.JwtUrlEnum;
-import com.chentongwei.security.app.jwt.util.JwtTokenUtil;
-import com.chentongwei.security.app.properties.SecurityProperties;
-import com.chentongwei.security.core.authorize.CoreAuthorizeConfigProvider;
-import com.chentongwei.security.core.response.ResponseEntity;
-import com.chentongwei.security.validate.authorize.ValidateAuthorizeConfigProvider;
+import com.mengya.security.app.enums.JwtRedisEnum;
+import com.mengya.security.app.enums.JwtUrlEnum;
+import com.mengya.security.app.jwt.util.JwtTokenUtil;
+import com.mengya.security.app.properties.SecurityProperties;
+import com.mengya.security.core.authorize.CoreAuthorizeConfigProvider;
+import com.mengya.security.core.response.ResponseEntity;
+import com.mengya.security.validate.authorize.ValidateAuthorizeConfigProvider;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
@@ -188,7 +188,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
         String[] validatePermitUrls = ValidateAuthorizeConfigProvider.getPermitUrls();
 
         /** 返回的数组 */
-        return (String[])ArrayUtils.addAll(corePermitUrls, validatePermitUrls);
+        return (String[]) ArrayUtils.addAll(corePermitUrls, validatePermitUrls);
     }
 
     private void responseEntity(HttpServletResponse response, Integer status, String msg) {
