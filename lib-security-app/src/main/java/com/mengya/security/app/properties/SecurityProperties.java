@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  *
  * @author chentongwei@bshf360.com 2018-06-07 19:51
  */
-@ConfigurationProperties(prefix = "com.chentongwei.security")
+@ConfigurationProperties(prefix = "core.security")
 public class SecurityProperties {
 
     private JwtProperties jwt = new JwtProperties();

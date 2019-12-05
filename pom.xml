@@ -17,6 +17,7 @@
         <lib.security.core.version>1.0.0</lib.security.core.version>
         <lib.security.validate.version>1.0.0</lib.security.validate.version>
         <lib.security.app.version>1.0.0</lib.security.app.version>
+        <lib.security.browser.version>1.0.0</lib.security.browser.version>
     </properties>
 
     <dependencyManagement>
@@ -55,5 +56,6 @@
         <module>lib-security-validate</module>
         <module>lib-security-demo</module>
         <module>lib-security-app</module>
+        <module>lib-security-browser</module>
     </modules>
 </project>

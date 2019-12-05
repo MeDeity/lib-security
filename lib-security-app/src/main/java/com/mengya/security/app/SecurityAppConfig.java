@@ -17,13 +17,13 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 public class SecurityAppConfig {
 
     @Bean(name = "authenticationSuccessHandler")
-    @ConditionalOnProperty(prefix = "com.chentongwei.security.app.success.handler", name = "enable", matchIfMissing = true)
+    @ConditionalOnProperty(prefix = "core.security.app.success.handler", name = "enable", matchIfMissing = true)
     public AuthenticationSuccessHandler authenticationSuccessHandler() {
         return new AppAuthenticationSuccessHandler();
     }
 
     @Bean(name = "authenticationFailureHandler")
-    @ConditionalOnProperty(prefix = "com.chentongwei.security.app.failure.handler", name = "enable", matchIfMissing = true)
+    @ConditionalOnProperty(prefix = "core.security.app.failure.handler", name = "enable", matchIfMissing = true)
     public AuthenticationFailureHandler authenticationFailureHandler() {
         return new AppAuthenticationFailureHandler();
     }

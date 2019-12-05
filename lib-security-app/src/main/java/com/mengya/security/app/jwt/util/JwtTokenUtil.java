@@ -1,6 +1,6 @@
 package com.mengya.security.app.jwt.util;
 
-import com.chentongwei.security.app.properties.SecurityProperties;
+import com.mengya.security.app.properties.SecurityProperties;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
