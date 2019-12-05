@@ -21,7 +21,7 @@ public class ValidateCodeRepositoryConfig {
      * @return
      */
     @Bean
-    @ConditionalOnProperty(prefix = "com.chentongwei.security.code", value = "repository", havingValue = "session", matchIfMissing = true)
+    @ConditionalOnProperty(prefix = "core.security.code", value = "repository", havingValue = "session", matchIfMissing = true)
     public ValidateCodeRepository sessionValidateCodeRepository() {
         return new SessionValidateCodeRepository();
     }
@@ -32,7 +32,7 @@ public class ValidateCodeRepositoryConfig {
      * @return
      */
     @Bean
-    @ConditionalOnProperty(prefix = "com.chentongwei.security.code", value = "repository", havingValue = "redis")
+    @ConditionalOnProperty(prefix = "core.security.code", value = "repository", havingValue = "redis")
     public ValidateCodeRepository redisValidateCodeRepository() {
         return new RedisValidateCodeRepository();
     }

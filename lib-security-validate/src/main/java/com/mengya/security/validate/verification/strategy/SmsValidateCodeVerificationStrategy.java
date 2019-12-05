@@ -12,8 +12,9 @@ import org.springframework.web.context.request.ServletWebRequest;
  */
 public class SmsValidateCodeVerificationStrategy implements ValidateCodeVerificationStrategy {
 
+    //没有抛出异常则代表校验通过
     @Override
     public void verification(ValidateCodeRepository validateCodeRepository, ServletWebRequest request, ValidateCodeTypeEnum validateCodeType) {
-        new CommonValidateCodeVerification().verifity(validateCodeRepository, request, validateCodeType, ValidateCodeParamNameEnum.DEFAULT_PARAMETER_NAME_CODE_SMS.getValue());
+        new CommonValidateCodeVerification().verify(validateCodeRepository, request, validateCodeType, ValidateCodeParamNameEnum.DEFAULT_PARAMETER_NAME_CODE_SMS.getValue());
     }
 }

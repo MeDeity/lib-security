@@ -10,7 +10,7 @@ import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 
 /**
- * 通用的校验逻辑，图形验证码/sms验证码公用
+ * 通用的校验逻辑，图形验证码/sms验证码共用
  *
  * @author chentongwei@bshf360.com 2018-05-28 15:51
  */
@@ -24,7 +24,7 @@ public class CommonValidateCodeVerification {
      * @param validateCodeType：验证码类型
      * @param codeParam：验证码参数
      */
-    public void verifity(ValidateCodeRepository validateCodeRepository, ServletWebRequest request, ValidateCodeTypeEnum validateCodeType, String codeParam) {
+    public void verify(ValidateCodeRepository validateCodeRepository, ServletWebRequest request, ValidateCodeTypeEnum validateCodeType, String codeParam) {
         ValidateCode code = validateCodeRepository.get(request, validateCodeType);
         String codeInRequest;
         try {

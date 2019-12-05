@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * 图形验证码处理器
  *
- * imageValidateCodeProcessor ==> {@link com.chentongwei.security.validate.code.ValidateCodeProcessorHolder}
+ * imageValidateCodeProcessor ==> {@link .ValidateCodeProcessorHolder}
  *
  * @author chentongwei@bshf360.com 2018-05-28 14:52
  */

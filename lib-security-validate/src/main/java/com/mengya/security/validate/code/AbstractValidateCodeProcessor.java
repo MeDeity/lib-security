@@ -103,8 +103,7 @@ public abstract class AbstractValidateCodeProcessor<C extends ValidateCode> impl
 
     /**
      * 根据请求的Url获取验证码的类型
-     *
-     * @return：image、sms、geetest
+     * return：image、sms、geetest
      */
     private ValidateCodeTypeEnum getValidateCodeType() {
         String type = StringUtils.substringBefore(getClass().getSimpleName(), SUFFIX_CODE_PROCESSOR);

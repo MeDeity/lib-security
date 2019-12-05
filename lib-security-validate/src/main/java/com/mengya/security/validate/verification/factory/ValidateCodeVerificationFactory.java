@@ -18,7 +18,7 @@ public final class ValidateCodeVerificationFactory {
 
     private ValidateCodeVerificationFactory() {}
 
-    private static class InnterValidateCodeVerification {
+    private static class InnerValidateCodeVerification {
        private static final ValidateCodeVerificationFactory INSTANCE = new ValidateCodeVerificationFactory();
     }
 
@@ -35,6 +35,6 @@ public final class ValidateCodeVerificationFactory {
     }
 
     public static ValidateCodeVerificationFactory getInstance() {
-        return InnterValidateCodeVerification.INSTANCE;
+        return InnerValidateCodeVerification.INSTANCE;
     }
 }
