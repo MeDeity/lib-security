@@ -2,6 +2,7 @@ package com.mengya.security.core.properties;
 
 import com.mengya.security.core.properties.authentication.AuthenticationProperties;
 import com.mengya.security.core.properties.authorize.AuthorizeProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
@@ -10,8 +11,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("core.security")
 public class SecurityProperties {
     /** 授权模块配置 */
+    @Autowired
     private AuthorizeProperties authorize;
     /** 认证模块配置 */
+    @Autowired
     private AuthenticationProperties authentication;
 
     public AuthorizeProperties getAuthorize() {

@@ -1,10 +1,12 @@
 package com.mengya.security.core.properties.authentication;
 
 import com.mengya.security.core.enums.LoginTypeEnum;
+import org.springframework.stereotype.Component;
 
 /**
  * @author chentongwei@bshf360.com 2018-03-26 11:14
  */
+@Component
 public class AuthenticationProperties {
     /**
      * 登录方式，跳转页面/JSON

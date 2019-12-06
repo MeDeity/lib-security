@@ -1,8 +1,11 @@
 package com.mengya.security.core.properties.authorize;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author chentongwei@bshf360.com 2018-03-26 11:14
  */
+@Component
 public class AuthorizeProperties {
     /** 无需权限即可访问的url */
     private String permitUrls;

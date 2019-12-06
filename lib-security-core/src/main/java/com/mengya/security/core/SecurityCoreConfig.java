@@ -10,7 +10,7 @@ import org.springframework.context.annotation.PropertySource;
  * @author chentongwei@bshf360.com 2018-03-26 11:14
  */
 @Configuration
-@PropertySource("classpath:security.yml")
+@PropertySource("classpath:security.properties")
 @EnableConfigurationProperties(SecurityProperties.class)
 public class SecurityCoreConfig {
 }

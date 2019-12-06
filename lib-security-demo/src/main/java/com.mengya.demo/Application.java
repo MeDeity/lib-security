@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * @author chentongwei@bshf360.com 2018-03-26 10:26
  */
 @ServletComponentScan
-@ComponentScan(basePackages = {"com.mengya.security"})
+@ComponentScan(basePackages = {"com.mengya.security","com.mengya.demo"})
 @SpringBootApplication
 @RestController
 public class Application extends WebMvcConfigurerAdapter{

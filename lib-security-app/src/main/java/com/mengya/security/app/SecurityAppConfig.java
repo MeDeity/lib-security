@@ -12,7 +12,7 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
 @Configuration
-@PropertySource("classpath:security.yml")
+@PropertySource("classpath:security.properties")
 @EnableConfigurationProperties(SecurityProperties.class)
 public class SecurityAppConfig {
 

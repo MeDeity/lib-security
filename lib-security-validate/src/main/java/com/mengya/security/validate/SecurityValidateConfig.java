@@ -1,7 +1,7 @@
 package com.mengya.security.validate;
 
 
-import com.mengya.security.core.properties.SecurityProperties;
+import com.mengya.security.validate.properties.SecurityProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * @author chentongwei@bshf360.com 2018-05-25 11:31
  */
 @Configuration
-@PropertySource("classpath:security.yml")
+@PropertySource("classpath:security.properties")
 @EnableConfigurationProperties(SecurityProperties.class)
 public class SecurityValidateConfig {
 
