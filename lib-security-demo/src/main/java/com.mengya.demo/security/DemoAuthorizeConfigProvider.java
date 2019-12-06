@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.stereotype.Component;
 
 /**
+ * 演示了如何自定义过滤器
  * @author chentongwei@bshf360.com 2018-06-01 18:49
  */
 @Component

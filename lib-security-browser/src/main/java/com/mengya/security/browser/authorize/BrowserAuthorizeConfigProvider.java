@@ -1,5 +1,6 @@
 package com.mengya.security.browser.authorize;
 
+import com.mengya.security.browser.logout.BrowserLogoutSuccessHandler;
 import com.mengya.security.browser.properties.SecurityProperties;
 import com.mengya.security.core.authorize.AuthorizeConfigProvider;
 import org.springframework.beans.factory.annotation.Autowired;
