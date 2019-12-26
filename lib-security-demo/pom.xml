@@ -34,4 +34,19 @@
             <artifactId>commons-io</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!--发布到私有仓库依赖的插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.1</version>
+                <configuration>
+                    <!--如果在多模块项目中，可以将不需要发布的项目配置为skip=true-->
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
