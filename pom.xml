@@ -20,6 +20,22 @@
         <lib.security.browser.version>1.0.0</lib.security.browser.version>
     </properties>
 
+    <!--发布到私有仓库的配置-->
+    <distributionManagement>
+        <repository>
+            <id>nexus-private</id>
+            <name>nexus-private-releases</name>
+            <url>http://120.27.229.28:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-private</id>
+            <name>nexus-private-snapshots</name>
+            <url>http://120.27.229.28:8081/repository/maven-snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+            <layout>legacy</layout>
+        </snapshotRepository>
+    </distributionManagement>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
