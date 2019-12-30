@@ -83,5 +83,6 @@
         <module>lib-security-demo</module>
         <module>lib-security-app</module>
         <module>lib-security-browser</module>
+        <module>lib-security-rbac</module>
     </modules>
 </project>
