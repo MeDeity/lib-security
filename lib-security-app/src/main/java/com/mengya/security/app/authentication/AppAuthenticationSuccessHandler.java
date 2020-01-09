@@ -65,9 +65,10 @@ public class AppAuthenticationSuccessHandler extends SavedRequestAwareAuthentica
                 securityProperties.getJwt().getExpiration(),
                 TimeUnit.SECONDS
         );
-        response.setHeader("Authorization", "Bearer " + token);
+        String authToken = "Bearer " + token;
+        response.setHeader("Authorization", authToken);
         response.setContentType("application/json;charset=UTF-8");
-        response.getWriter().write(JSON.toJSONString(new ResponseEntity(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase()).data(authentication)));
+        response.getWriter().write(JSON.toJSONString(new ResponseEntity(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase()).data(authentication).extra(authToken)));
 
     }
 

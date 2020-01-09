@@ -13,6 +13,8 @@ public class ResponseEntity {
 
     /** 返回数据 */
     private Object data;
+    /** */
+    private Object extra;
 
     public ResponseEntity() {
     }
@@ -24,6 +26,11 @@ public class ResponseEntity {
 
     public ResponseEntity data(Object data) {
         this.data = data;
+        return this;
+    }
+
+    public ResponseEntity extra(Object extra) {
+        this.extra = extra;
         return this;
     }
 
@@ -49,5 +56,13 @@ public class ResponseEntity {
 
     public void setData(Object data) {
         this.data = data;
+    }
+
+    public Object getExtra() {
+        return extra;
+    }
+
+    public void setExtra(Object extra) {
+        this.extra = extra;
     }
 }

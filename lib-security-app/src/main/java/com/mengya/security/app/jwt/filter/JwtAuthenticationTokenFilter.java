@@ -84,7 +84,10 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
         }
 
         // 获取Authorization
-        String authHeader = request.getHeader("Authorization");
+        String authHeader = request.getParameter("Authorization");
+        if(StringUtils.isBlank(authHeader)) {
+            authHeader = request.getHeader("Authorization");
+        }
         if (StringUtils.isBlank(authHeader) || ! authHeader.startsWith("Bearer ")) {
             logger.error("Authorization的开头不是Bearer，Authorization===>【{}】", authHeader);
             responseEntity(response, HttpStatus.UNAUTHORIZED.value(), "暂无权限！");
