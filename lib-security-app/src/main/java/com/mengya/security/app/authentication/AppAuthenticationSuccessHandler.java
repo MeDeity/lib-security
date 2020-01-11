@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 
@@ -65,6 +66,8 @@ public class AppAuthenticationSuccessHandler extends SavedRequestAwareAuthentica
                 securityProperties.getJwt().getExpiration(),
                 TimeUnit.SECONDS
         );
+        //ADD BY fengwenhua 修正了上层无法获取当前用户信息的问题void methodName(Authentication authentication) then authentication return null
+        SecurityContextHolder.getContext().setAuthentication(authentication);
         String authToken = "Bearer " + token;
         response.setHeader("Authorization", authToken);
         response.setContentType("application/json;charset=UTF-8");
