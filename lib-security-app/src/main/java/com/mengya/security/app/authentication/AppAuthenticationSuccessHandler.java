@@ -66,8 +66,6 @@ public class AppAuthenticationSuccessHandler extends SavedRequestAwareAuthentica
                 securityProperties.getJwt().getExpiration(),
                 TimeUnit.SECONDS
         );
-        //ADD BY fengwenhua 修正了上层无法获取当前用户信息的问题void methodName(Authentication authentication) then authentication return null
-        SecurityContextHolder.getContext().setAuthentication(authentication);
         String authToken = "Bearer " + token;
         response.setHeader("Authorization", authToken);
         response.setContentType("application/json;charset=UTF-8");

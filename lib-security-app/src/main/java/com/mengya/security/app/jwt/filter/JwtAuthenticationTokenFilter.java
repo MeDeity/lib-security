@@ -1,6 +1,7 @@
 package com.mengya.security.app.jwt.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.mengya.security.app.domain.AppAuthentication;
 import com.mengya.security.app.enums.JwtRedisEnum;
 import com.mengya.security.app.enums.JwtUrlEnum;
 import com.mengya.security.app.jwt.util.JwtTokenUtil;
@@ -131,7 +132,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 
         if (SecurityContextHolder.getContext().getAuthentication() == null) {
             String authenticationStr = redisTemplate.opsForValue().get(JwtRedisEnum.getAuthenticationKey(username, randomKey));
-            Authentication authentication = JSON.parseObject(authenticationStr, Authentication.class);
+            AppAuthentication authentication = JSON.parseObject(authenticationStr, AppAuthentication.class);
             SecurityContextHolder.getContext().setAuthentication(authentication);
         }
 
