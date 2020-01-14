@@ -59,4 +59,24 @@ public class AppAuthentication implements Authentication {
     public String getName() {
         return name;
     }
+
+    public void setPrincipal(Object principal) {
+        this.principal = principal;
+    }
+
+    public void setDetails(Object details) {
+        this.details = details;
+    }
+
+    public void setCredentials(Object credentials) {
+        this.credentials = credentials;
+    }
+
+    public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
+        this.authorities = authorities;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
