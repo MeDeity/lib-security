@@ -10,7 +10,7 @@ import java.util.Collection;
  * 保存到Redis数据库的权限信息转Authentication需要用到该实体类作为桥接
  * create by fengwenhua at 2020-1-11 17:22:20
  */
-public class AppAuthentication implements Authentication {
+public class AppAuthentication<T extends GrantedAuthority> implements Authentication {
 
     private boolean authenticated;
 
@@ -20,13 +20,13 @@ public class AppAuthentication implements Authentication {
 
     private Object credentials;
 
-    private Collection<? extends GrantedAuthority> authorities;
+    private Collection<T> authorities;
 
     private String name;
 
 
     @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
+    public Collection<T> getAuthorities() {
         return authorities;
     }
 
@@ -58,5 +58,25 @@ public class AppAuthentication implements Authentication {
     @Override
     public String getName() {
         return name;
+    }
+
+    public void setPrincipal(Object principal) {
+        this.principal = principal;
+    }
+
+    public void setDetails(Object details) {
+        this.details = details;
+    }
+
+    public void setCredentials(Object credentials) {
+        this.credentials = credentials;
+    }
+
+    public void setAuthorities(Collection<T> authorities) {
+        this.authorities = authorities;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

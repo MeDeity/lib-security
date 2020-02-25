@@ -1,7 +1,9 @@
 package com.mengya.security.app.jwt.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
 import com.mengya.security.app.domain.AppAuthentication;
+import com.mengya.security.app.domain.AppGrantedAuthority;
 import com.mengya.security.app.enums.JwtRedisEnum;
 import com.mengya.security.app.enums.JwtUrlEnum;
 import com.mengya.security.app.jwt.util.JwtTokenUtil;
@@ -16,7 +18,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.AntPathMatcher;
@@ -132,7 +133,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 
         if (SecurityContextHolder.getContext().getAuthentication() == null) {
             String authenticationStr = redisTemplate.opsForValue().get(JwtRedisEnum.getAuthenticationKey(username, randomKey));
-            AppAuthentication authentication = JSON.parseObject(authenticationStr, AppAuthentication.class);
+            AppAuthentication authentication = JSON.parseObject(authenticationStr, new TypeReference<AppAuthentication<AppGrantedAuthority>>(){});
             SecurityContextHolder.getContext().setAuthentication(authentication);
         }
 
