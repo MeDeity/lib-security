@@ -6,7 +6,7 @@
 
     <groupId>com.mengya</groupId>
     <artifactId>lib-security</artifactId>
-    <version>${lib.security.version}</version>
+    <version>1.0.1</version>
     <!--这里一定选的是pom  不要是jar war-->
     <packaging>pom</packaging>
     <name>lib-security</name>
