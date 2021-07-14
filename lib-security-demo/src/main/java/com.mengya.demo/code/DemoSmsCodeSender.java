@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @author chentongwei@bshf360.com 2018-03-28 12:46
  */
 
-//@Component
+@Component
 public class DemoSmsCodeSender implements SmsCodeSender {
     @Override
     public void send(String mobile, String code) {

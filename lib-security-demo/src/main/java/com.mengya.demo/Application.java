@@ -1,26 +1,27 @@
 package com.mengya.demo;
 
-//import com.alibaba.fastjson.JSON;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
  * @author chentongwei@bshf360.com 2018-03-26 10:26
  */
-@ServletComponentScan
-@ComponentScan(basePackages = {"com.mengya.security","com.mengya.demo"})
+
+@ComponentScan(basePackages = {"com.mengya.*"})
 @SpringBootApplication
 @RestController
-public class Application extends WebMvcConfigurerAdapter{
+public class Application{
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        try {
+            SpringApplication.run(Application.class, args);
+        }catch (Throwable  e){
+            e.printStackTrace();
+        }
+
     }
     @GetMapping("/hello")
     public String hello() {
