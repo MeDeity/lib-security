@@ -4,6 +4,7 @@ package com.mengya.demo.user;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -16,6 +17,7 @@ import java.util.Date;
 /**
  * @author chentongwei@bshf360.com 2018-03-26 13:15
  */
+@Primary
 @Service
 public class MyUserDetailsService implements UserDetailsService/*, SocialUserDetailsService */{
 
