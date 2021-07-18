@@ -6,7 +6,7 @@
 
     <groupId>com.mengya</groupId>
     <artifactId>lib-security</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <!--这里一定选的是pom  不要是jar war-->
     <packaging>pom</packaging>
     <name>lib-security</name>
@@ -19,11 +19,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <lib.security.version>1.0.1</lib.security.version>
-        <lib.security.core.version>1.0.1</lib.security.core.version>
-        <lib.security.validate.version>1.0.1</lib.security.validate.version>
-        <lib.security.app.version>1.0.1</lib.security.app.version>
-        <lib.security.browser.version>1.0.1</lib.security.browser.version>
+        <lib.security.version>1.0.2</lib.security.version>
+        <lib.security.core.version>1.0.2</lib.security.core.version>
+        <lib.security.validate.version>1.0.2</lib.security.validate.version>
+        <lib.security.app.version>1.0.2</lib.security.app.version>
+        <lib.security.browser.version>1.0.2</lib.security.browser.version>
     </properties>
 
     <!--发布到私有仓库的配置-->
